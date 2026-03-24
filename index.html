@@ -3,19 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Annies Coffee</title>
+    <title>"Cannon's Coffee"</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <img
-        src="images/cannons-coffee-logo.png"
-        alt="Cannons Coffee, Beans of Joy! Est. 2014"
-      />
-      <h1>Cannons Coffee</h1>
-    </header>
-    <main>
-      <h2>Coming Soon!</h2>
-    </main>
+    <div class="wrapper">
+      <header class="navbar">
+        <div class="logo">
+          <img
+            src="images/logo-nav.png"
+            alt="Cannons Coffee, Beans of Joy! Est. 2014"
+          />
+          <h1>Cannons Coffee</h1>
+        </div>
+        <div class="navbar_container">
+          <nav class="nav-child">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/latte.html">Coffee</a></li>
+              <li>
+                <a href="https://www.isnotokay.com" target="_blank">About</a>
+              </li>
+              <li>
+                <a href="mailto:anaisgreyson95@gmail.com" target="_blank"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <article class="featured">
+          <img
+            class="feat-img"
+            src="images/coffee-computer.jpg"
+            alt="laptop with a cup of coffee and a glass of water"
+          />
+          <div class="card">
+            <h2>Coffee and Code</h2>
+
+            <p>
+              Join us at Cannons Coffee for a pick-me-up and plenty of code
+              assistance and support at our coding cafe
+            </p>
+            <a href="https://isnotokay.com/network.html" class="button"
+              >Reserve a table</a
+            >
+          </div>
+        </article>
+        <!-- this is the closing for the .featured -->
+        <div class="grid">
+          <h3>Our Coffee</h3>
+          <div class="card">
+            <h4>Latte</h4>
+            <img src="images/latte.jpg" alt="latte in a cup" />
+            <p>
+              Hot or cold, with dairy or oat milk, your favorite is available
+              anytime!
+            </p>
+            <a href="http://startbucks.com/order" class="button">
+              Order Latte</a
+            >
+          </div>
+          <div class="card">
+            <h4>Coffee</h4>
+            <img src="images/coffee.jpg" alt="Coffee in a cup" />
+            <p>
+              Simple, elegant, and always in style, our black coffee comes from
+              Colombia in small, hand-roasted batches.
+            </p>
+            <a href="https://www.isnotokay.com" class="button">
+              Order Coffee
+            </a>
+          </div>
+          <div class="card">
+            <h4>Hot Chocolate</h4>
+            <img
+              src="images/hotchoc.jpg"
+              alt="Hot Chocolate in a cup with whipped cream"
+            />
+            <p>
+              Not a coffee person! We have you covered. Hot, sweet, ready
+              anytime.
+            </p>
+            <a href="https://www.isnotokay.com/about" class="button"
+              >Order Hot</a
+            >
+          </div>
+          <div class="card">
+            <h4>Iced Coffee</h4>
+            <img
+              src="images/iced.jpg"
+              alt="Iced coffee in a mug with a straw"
+            />
+            <p>
+              Perfect for hot summer days, our iced coffee is made with just
+              enough sweetness to cool down your day.
+            </p>
+            <a href="https://www.isnotokay.com/about" class="button"
+              >Order Iced</a
+            >
+          </div>
+        </div>
+        <!-- this is the closing for the .card_container -->
+      </main>
+      <footer>
+        <div class="footer_container">
+          <img
+            src="images/logo-nav.png"
+            alt="Cannons Coffee, Beans of Joy! Est. 2014"
+            class="logo"
+          />
+          <p class="copyright">© 2026 Cannons Coffee. All Rights Reserved.</p>
+        </div>
+        <!-- .footer_container div ending -->
+      </footer>
+    </div>
   </body>
 </html>
