@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latte Page</title>
+    <link rel="stylesheet" href="css/latte-styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="navbar">
+        <div class="logo">
+          <img
+            src="https://assets.codepen.io/t-15440/cannons-coffee-logo.png"
+            alt="Cannons Coffee, Beans of Joy! Est. 2014"
+            class="logo"
+          />
+          <h1>Cannons Coffee</h1>
+        </div>
+        <div class="navbar_container">
+          <nav class="nav-child">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="latte.html">Coffee</a></li>
+              <li>
+                <a href="https://www.isnotokay.com" target="_blank">About</a>
+              </li>
+              <li>
+                <a href="mailto:anaisgreyson95@gmail.com" target="_blank"
+                  >Contact</a
+                >
+              </li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="inquiry.html">Inquiry</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <h2>Inquiry Form</h2>
+
+        <form id="inquiry-form">
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Your Preferences</legend>
+
+            <label for="flavor">Favorite Coffee Flavor:</label>
+            <select id="flavor" name="flavor" required>
+              <option value="">-- Choose a flavor --</option>
+              <option value="Caramel Macchiato">Caramel Macchiato</option>
+              <option value="French Vanilla">French Vanilla</option>
+              <option value="Hazelnut">Hazelnut</option>
+              <option value="Mocha">Mocha</option>
+            </select>
+
+            <p>What are you interested in?</p>
+
+            <input
+              type="radio"
+              id="buying"
+              name="interest"
+              value="buying coffee"
+              required
+            />
+            <label for="buying">Buying Coffee</label>
+
+            <input
+              type="radio"
+              id="employment"
+              name="interest"
+              value="seeking employment"
+            />
+            <label for="employment">Seeking Employment</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Comments</legend>
+
+            <label for="comments">Comments:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              cols="40"
+            ></textarea>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div id="thank-you-message"></div>
+      </main>
+
+      <footer>
+        <div class="footer_container">
+          <img
+            src=" https://assets.codepen.io/296057/logo-footer.png"
+            alt="Cannons Coffee, Beans of Joy! Est. 2014"
+            class="logo"
+          />
+          <p class="copyright">© 2026 Cannons Coffee. All Rights Reserved.</p>
+        </div>
+        <!-- .footer_container div ending -->
+      </footer>
+    </div>
+    <!-- .wrapper div ending -->
+    <script src="js/custom-inquiry.js"></script>
+  </body>
+</html>
